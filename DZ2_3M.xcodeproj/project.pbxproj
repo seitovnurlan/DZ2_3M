@@ -13,6 +13,10 @@
 		2852E2FF29A14E560029BF5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2852E2FD29A14E560029BF5C /* Main.storyboard */; };
 		2852E30129A14E580029BF5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2852E30029A14E580029BF5C /* Assets.xcassets */; };
 		2852E30429A14E580029BF5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2852E30229A14E580029BF5C /* LaunchScreen.storyboard */; };
+		28AB53DB29A7DE41008C2091 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB53DA29A7DE41008C2091 /* SecondVC.swift */; };
+		28AB53DD29A7DEB0008C2091 /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB53DC29A7DEB0008C2091 /* ThirdVC.swift */; };
+		28AB53DF29A7DEC9008C2091 /* FourthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB53DE29A7DEC9008C2091 /* FourthVC.swift */; };
+		28AB53E129A7DEE6008C2091 /* FifthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AB53E029A7DEE6008C2091 /* FifthVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		2852E30029A14E580029BF5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2852E30329A14E580029BF5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2852E30529A14E580029BF5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28AB53DA29A7DE41008C2091 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		28AB53DC29A7DEB0008C2091 /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
+		28AB53DE29A7DEC9008C2091 /* FourthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthVC.swift; sourceTree = "<group>"; };
+		28AB53E029A7DEE6008C2091 /* FifthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,10 @@
 				2852E2F729A14E560029BF5C /* AppDelegate.swift */,
 				2852E2F929A14E560029BF5C /* SceneDelegate.swift */,
 				2852E2FB29A14E560029BF5C /* ViewController.swift */,
+				28AB53DA29A7DE41008C2091 /* SecondVC.swift */,
+				28AB53DC29A7DEB0008C2091 /* ThirdVC.swift */,
+				28AB53DE29A7DEC9008C2091 /* FourthVC.swift */,
+				28AB53E029A7DEE6008C2091 /* FifthVC.swift */,
 				2852E2FD29A14E560029BF5C /* Main.storyboard */,
 				2852E30029A14E580029BF5C /* Assets.xcassets */,
 				2852E30229A14E580029BF5C /* LaunchScreen.storyboard */,
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28AB53DF29A7DEC9008C2091 /* FourthVC.swift in Sources */,
 				2852E2FC29A14E560029BF5C /* ViewController.swift in Sources */,
+				28AB53E129A7DEE6008C2091 /* FifthVC.swift in Sources */,
 				2852E2F829A14E560029BF5C /* AppDelegate.swift in Sources */,
+				28AB53DB29A7DE41008C2091 /* SecondVC.swift in Sources */,
 				2852E2FA29A14E560029BF5C /* SceneDelegate.swift in Sources */,
+				28AB53DD29A7DEB0008C2091 /* ThirdVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
