@@ -8,20 +8,45 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var b: Bool = true
     @IBOutlet weak var view2: UIView!
-    
-    
     @IBOutlet weak var emailTextField: UITextField!
-    
     @IBOutlet weak var PasswordTextField: UITextField!
     
     @IBAction func forgotPasswordButton(_ sender: Any) {
-        performSegue(withIdentifier: "goThree", sender: nil)
+        let ThreeVC = storyboard?.instantiateViewController(withIdentifier: "ThirdVC")
+                navigationController?.pushViewController(ThreeVC!, animated: true)
     }
     
+    
     @IBAction func signUpButton(_ sender: Any) {
-        performSegue(withIdentifier: "goTwo", sender: nil)
+        let TwoVC = storyboard?.instantiateViewController(withIdentifier: "SecondVC")
+                navigationController?.pushViewController(TwoVC!, animated: true)
     }
+    
+    @IBOutlet weak var rememberLabel: UILabel!
+    
+    @IBOutlet weak var chekBoxButtonview: UIButton!
+    
+    @IBAction func chekBoxButton(_ sender: Any) {
+        
+        if b {
+            chekBoxButtonview.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
+           // chekBoxButtonview.setImage(UIImage(systemName: "checkmark.square.fill"), for: .normal)
+            chekBoxButtonview.backgroundColor = UIColor.yellow
+            chekBoxButtonview.tintColor = UIColor.blue
+            rememberLabel.font = UIFont.boldSystemFont(ofSize: 18)
+            b = false
+        } else {
+            chekBoxButtonview.setImage(UIImage(systemName: "squareshape"), for: .normal)
+            chekBoxButtonview.backgroundColor = UIColor.white
+            chekBoxButtonview.tintColor = UIColor.black
+            rememberLabel.font = UIFont.systemFont(ofSize: 18)
+            b = true
+        }
+        
+    }
+    
     
     @IBAction func signInButton(_ sender: Any) {
         
@@ -36,7 +61,9 @@ class ViewController: UIViewController {
             PasswordTextField.placeholder = "Заполните пожалуйста"
         } else
         {
-            performSegue(withIdentifier: "goFive", sender: nil)
+            let successVC = storyboard?.instantiateViewController(withIdentifier: "FifthVC")
+                    navigationController?.pushViewController(successVC!, animated: true)
+
         }
     }
     
@@ -45,7 +72,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         view2.layer.cornerRadius = 20
+//        view2.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         // Do any additional setup after loading the view.
+//        navigationController?.popToRootViewController(animated: true)
     }
 
 

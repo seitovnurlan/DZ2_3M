@@ -63,7 +63,8 @@ class ThirdVC: UIViewController {
             inputSmsTF.placeholder = "Заполните пожалуйста"
         } else
         {
-            performSegue(withIdentifier: "theeGofour", sender: nil)
+            let FourVC = storyboard?.instantiateViewController(withIdentifier: "FourthVC")
+                    navigationController?.pushViewController(FourVC!, animated: true)
         }
         
     }
