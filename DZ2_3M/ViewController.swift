@@ -31,8 +31,8 @@ class ViewController: UIViewController {
     @IBAction func chekBoxButton(_ sender: Any) {
         
         if b {
-            chekBoxButtonview.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
-           // chekBoxButtonview.setImage(UIImage(systemName: "checkmark.square.fill"), for: .normal)
+        chekBoxButtonview.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
+//            chekBoxButtonview.setImage(UIImage(systemName: "checkmark.square.fill"), for: .normal)
             chekBoxButtonview.backgroundColor = UIColor.yellow
             chekBoxButtonview.tintColor = UIColor.blue
             rememberLabel.font = UIFont.boldSystemFont(ofSize: 18)

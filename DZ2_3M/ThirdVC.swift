@@ -9,11 +9,23 @@ import UIKit
 
 class ThirdVC: UIViewController {
 
+    @IBOutlet weak var buttonX1: UIButton!
+    
+    @IBOutlet weak var buttonX2: UIButton!
+    
+    @IBOutlet weak var buttonX3: UIButton!
+    
+    @IBOutlet weak var buttonX4: UIButton!
+    
+    @IBOutlet weak var buttonX5: UIButton!
+    
+    @IBOutlet weak var buttonX6: UIButton!
     
     @IBOutlet weak var view4: UIView!
     
     @IBOutlet weak var inputSmsTF: UITextField!
     
+    @IBOutlet weak var labelText: UILabel!
     @IBOutlet weak var mobilTF: UITextField!
     
     @IBAction func mobilEnablTF(_ sender: Any) {
@@ -78,19 +90,37 @@ class ThirdVC: UIViewController {
         getOTPButtonEnabl.isEnabled = false
         submitButtonEnabl.isEnabled = false
         
+        mobilTF.layer.borderWidth = 2
+        mobilTF.layer.cornerRadius = 10
+        mobilTF.layer.borderColor = UIColor.gray.cgColor
+        
+        labelText.layer.borderWidth = 1
+        labelText.layer.cornerRadius = 10
+        labelText.layer.borderColor = UIColor.gray.cgColor
+        
+        buttonX1.layer.cornerRadius = 10
+        buttonX1.layer.borderWidth = 1
+        buttonX1.layer.borderColor = UIColor.gray.cgColor
+        
+        buttonX2.layer.cornerRadius = 10
+        buttonX2.layer.borderWidth = 1
+        buttonX2.layer.borderColor = UIColor.gray.cgColor
+        
+        buttonX3.layer.cornerRadius = 10
+        buttonX3.layer.borderWidth = 1
+        buttonX3.layer.borderColor = UIColor.gray.cgColor
 
-        // Do any additional setup after loading the view.
+        buttonX4.layer.cornerRadius = 10
+        buttonX4.layer.borderWidth = 1
+        buttonX4.layer.borderColor = UIColor.gray.cgColor
+        
+        buttonX5.layer.cornerRadius = 10
+        buttonX5.layer.borderWidth = 1
+        buttonX5.layer.borderColor = UIColor.gray.cgColor
+        
+        buttonX6.layer.cornerRadius = 10
+        buttonX6.layer.borderWidth = 1
+        buttonX6.layer.borderColor = UIColor.gray.cgColor
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
